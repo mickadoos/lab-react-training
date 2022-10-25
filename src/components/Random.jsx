@@ -1,8 +1,9 @@
 export default function Random({min, max}) {
-    console.log('MAX', max, min)
+
+    const numRandom = Math.floor(Math.random() * max);
     return(
-        <div>
-            <h3>Random value between {min} and {max} ={'>'} {Math.floor(Math.random() * max)}</h3>
+        <div className="user">
+            <h3>Random value between {min} and {max} ={'>'} {numRandom}</h3>
         </div>
     )
 }
